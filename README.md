@@ -298,9 +298,3 @@ This is a teaching project designed to demonstrate MCP concepts. Contributions t
 ---
 
 **Note**: This project is designed for educational purposes and demonstrates MCP concepts. For production use, additional security, error handling, and scalability considerations should be implemented.
-
-# Summary
-This is a foundational demo to show how and LLM running locally can interact with services that are discovered via MCP Servers
-
-# Overview of steps
-
