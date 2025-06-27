@@ -10,6 +10,16 @@ This demo illustrates the core principles of MCP-based LLM agents by implementin
 - Maintain conversation context and learn from previous interactions
 - Handle both Ollama (local) and cloud LLM providers
 - Demonstrate proper tool invocation and response handling
+- This project was done in Cursor (Pro) using the Agent tool
+
+## Quick Learnings from the Human In The Loop (Me)
+- Generative Code using AI is not magic (well, not ALL magic).
+- Having good knowledge is important because there will be debugging, and smells that you can suggest in the bugs that are raised
+- Some basic errors in the initial generation: The code did not even try to use the MCP Server, the MCP server had no discovery service, it lacked the conversational feedback loop, it was only using relative paths to the filesystem
+- Even in this simple example, there are MULTIPLE places to debug: System Prompt, User Prompts, AND each element of the system (had to curl the MCP server a lot to test)
+- I see some examples of the model doing "When confused or in doubt, overfit a solution by using lots of regexp".  That smells like solving a specific exmample, rather than attacking a higher issue with, perhaps, a library that solves that class of problem
+- There is a lot of code generated, and you WILL need to debug
+- Death Spiral Scrap temptation.  When the Gen AI is fixing code, it seems to often "solve by adding".  As you iterate to find the issues, add more and more, there is a temptation to say "oh god.  Lets just scrap and start over."
 
 ## 🏗️ System Architecture
 
