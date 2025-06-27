@@ -2,8 +2,11 @@
 
 A comprehensive demonstration and teaching resource for building Model Context Protocol (MCP) based LLM agents. This project showcases the fundamental concepts of how LLMs can interact with external services through MCP servers, enabling them to perform real-world tasks like filesystem operations.
 
-## 🎯 Project Overview
 
+## 🎯 The Goal
+- Use an agentic AI approach with an MCP tool to see if it can autonomously solve the problem of finding duplicate files on my filesystem.
+
+## 🎯 Project Overview
 This demo illustrates the core principles of MCP-based LLM agents by implementing a filesystem exploration agent that can:
 - Discover available MCP services automatically
 - Execute filesystem operations through MCP servers
@@ -12,8 +15,8 @@ This demo illustrates the core principles of MCP-based LLM agents by implementin
 - Demonstrate proper tool invocation and response handling
 - This project was done in Cursor (Pro) using the Agent tool
 
-## Quick Learnings from the Human In The Loop (Me)
-- Generative Code using AI is not magic (well, not ALL magic).
+## 🤔 Quick Learnings from the Human In The Loop (Me)
+- Generative Code using AI is amazing, but is not magic (well, not ALL magic).
 - Having good knowledge is important because there will be debugging, and smells that you can suggest in the bugs that are raised
 - Some basic errors in the initial generation: The code did not even try to use the MCP Server, the MCP server had no discovery service, it lacked the conversational feedback loop, it was only using relative paths to the filesystem
 - Even in this simple example, there are MULTIPLE places to debug: System Prompt, User Prompts, AND each element of the system (had to curl the MCP server a lot to test)
