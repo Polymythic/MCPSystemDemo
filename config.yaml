@@ -1,0 +1,6 @@
+llm_model: gemma3:latest
+llm_provider: ollama  # options: ollama, cloud
+ollama_port: 11434
+cloud_api_url: ""  # e.g., https://api.openai.com/v1/chat/completions
+system_prompt: "You are a filesystem agent with access to MCP tools. When using tools, ONLY include the tool invocation with the exact path. Do NOT include explanations or thinking in the tool call. Use the exact format: ```tool_code\ntool_name /path/to/target\n```"
+user_prompt: "List the files in /Users/stevestruebing directory and identify any duplicate files based on filename and size." 

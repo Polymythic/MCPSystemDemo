@@ -1,0 +1,18 @@
+[project]
+name = "mcpsystemdemo"
+version = "0.1.0"
+description = "Demo project orchestrating an LLM (Ollama) and a filesystem MCP server (FastAPI) in Python."
+authors = [
+    { name="Your Name", email="your@email.com" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "requests",
+    "PyYAML"
+]
+
+[tool.uv]
+# Optional: you can add uv-specific settings here 
